@@ -1,11 +1,10 @@
-import record from './data'
 import Card from './Card'
 
-const CardList = () => {
+const CardList = (props) => {
     return (
         <div className='carding'>
-           { record.map((elem,index)=>{
-                return <Card name={elem.name} id = {elem.id} email={elem.email}/>
+           { props.record.map((elem,index)=>{
+                return <Card key={elem.id} name={elem.name} id = {elem.id} email={elem.email}/>
             })}
             {/* <Card name={record[0].name}/> */}
         </div>

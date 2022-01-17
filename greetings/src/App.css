@@ -1,0 +1,11 @@
+.carding{
+  background: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  margin: 2rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid;
+}
